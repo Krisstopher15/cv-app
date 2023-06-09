@@ -1,0 +1,31 @@
+:root {
+  --cvpreview-header-bgcolor: #3a86ff;
+}
+
+.cvpreview {
+  display: grid;
+  height: 100%;
+  width: 800px;
+  grid-template-rows: 0.6fr 2fr;
+  grid-template-columns: 2fr 0.6fr;
+  background-color: bisque;
+}
+
+.cvpreview header {
+  grid-column: 1 / -1;
+  background-color: var(--cvpreview-header-bgcolor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cvpreview .person-name {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.title-of-study {
+  font-size: 2rem;
+  color: #fff;
+}

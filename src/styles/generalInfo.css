@@ -1,0 +1,14 @@
+.generalInfo-form {
+  display: flex;
+  flex-direction: column;
+  height: 33.33%;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+
+.generalInfo-form label {
+  text-align: center;
+  font-size: 1.2rem;
+}
