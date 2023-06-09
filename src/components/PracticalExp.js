@@ -11,7 +11,7 @@ export function PracticalExp({ practicalExpInfo, handlePracticaChange }) {
         type="text"
         name="companyName"
         id="companyName"
-        placeholder="Company Name"
+        placeholder={companyName}
         onChange={handlePracticaChange}
       />
       <label htmlFor="positionTitle">Position title: </label>
@@ -19,6 +19,7 @@ export function PracticalExp({ practicalExpInfo, handlePracticaChange }) {
         type="text"
         name="positionTitle"
         id="positionTitle"
+        placeholder={positionTitle}
         onChange={handlePracticaChange}
       />
       <label htmlFor="mainTasks">Main tasks: </label>
@@ -26,6 +27,7 @@ export function PracticalExp({ practicalExpInfo, handlePracticaChange }) {
         type="text"
         name="mainTasks"
         id="mainTasks"
+        placeholder={mainTasks}
         onChange={handlePracticaChange}
       />
       <label htmlFor="startDate">Start date: </label>
@@ -33,6 +35,7 @@ export function PracticalExp({ practicalExpInfo, handlePracticaChange }) {
         type="date"
         name="startDate"
         id="startDate"
+        placeholder={startDate}
         onChange={handlePracticaChange}
       />
       <label htmlFor="endDate">End date</label>
@@ -40,6 +43,7 @@ export function PracticalExp({ practicalExpInfo, handlePracticaChange }) {
         type="date"
         name="endDate"
         id="endDate"
+        placeholder={endDate}
         onChange={handlePracticaChange}
       />
     </form>

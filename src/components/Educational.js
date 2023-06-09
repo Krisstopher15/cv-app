@@ -9,7 +9,7 @@ export function Educational({ educationalInfo, handleEducationalChange }) {
         type="text"
         name="school"
         id="school"
-        value={school}
+        placeholder={school}
         onChange={handleEducationalChange}
       />
       <label htmlFor="titleStudy">Title of study: </label>
@@ -17,15 +17,15 @@ export function Educational({ educationalInfo, handleEducationalChange }) {
         type="text"
         name="titleStudy"
         id="titleStudy"
-        value={titleStudy}
+        placeholder={titleStudy}
         onChange={handleEducationalChange}
       />
       <label htmlFor="dateStudy">Date of study: </label>
       <input
-        type="text"
+        type="date"
         name="dateStudy"
         id="dateStudy"
-        value={dateStudy}
+        placeholder={dateStudy}
         onChange={handleEducationalChange}
       />
     </form>

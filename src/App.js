@@ -7,23 +7,25 @@ import "./styles/app.css";
 
 function App() {
   const [general, setGeneral] = useState({
-    name: "",
-    email: "",
-    phone: "",
+    name: "Chris P",
+    email: "default@email.com",
+    phone: "1-234-567-890",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor lobortis nunc, eu porta mi scelerisque vel. Nam sapien lacus, fringilla in faucibus in, faucibus quis tortor. Praesent vulputate auctor ligula ac consequat. Etiam non lacus purus. Aliquam id auctor tortor. Quisque nec pellentesque est, tempor cursus arcu.",
   });
 
   const [educational, setEducational] = useState({
-    school: "",
-    titleStudy: "",
-    dateStudy: "",
+    school: "Hardvard",
+    titleStudy: "Software Engineer",
+    dateStudy: "04-23-2014",
   });
 
   const [practical, setPractical] = useState({
-    companyName: "",
-    positionTitle: "",
-    mainTasks: "",
-    startDate: "",
-    endDate: "",
+    companyName: "Facebook",
+    positionTitle: "Junior Front End",
+    mainTasks: "Building and maintaining web applications",
+    startDate: "03-11-2015",
+    endDate: "05-10-2022",
   });
 
   const handleChanges = (e) => {

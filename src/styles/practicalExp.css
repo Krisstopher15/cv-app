@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   height: 33.33%;
-  border: 1px solid black;
   padding: 1rem;
   border-radius: 1rem;
+  background-color: var(--personal-info-bgcolor);
 }
 
 .practicalExp-form label {

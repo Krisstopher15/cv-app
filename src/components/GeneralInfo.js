@@ -1,7 +1,7 @@
 import "../styles/generalInfo.css";
 
 export function GeneralInfo({ generalInfo, handleNameChange }) {
-  const { name, email, phone } = generalInfo;
+  const { name, email, phone, description } = generalInfo;
   return (
     <form className="generalInfo-form">
       <label htmlFor="name">Name: </label>
@@ -9,7 +9,7 @@ export function GeneralInfo({ generalInfo, handleNameChange }) {
         type="text"
         name="name"
         id="name"
-        value={name}
+        placeholder={name}
         onChange={handleNameChange}
       />
       <label htmlFor="email">Email: </label>
@@ -17,7 +17,7 @@ export function GeneralInfo({ generalInfo, handleNameChange }) {
         type="email"
         name="email"
         id="email"
-        value={email}
+        placeholder={email}
         onChange={handleNameChange}
       />
       <label htmlFor="phone">Phone Number: </label>
@@ -25,9 +25,18 @@ export function GeneralInfo({ generalInfo, handleNameChange }) {
         type="tel"
         name="phone"
         id="phone"
-        value={phone}
+        placeholder={phone}
         onChange={handleNameChange}
       />
+      <label htmlFor="description">Description</label>
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder={description}
+        onChange={handleNameChange}
+      ></textarea>
     </form>
   );
 }
